@@ -1,9 +1,3 @@
-/**
- * Landing Page Component
- *
- * The main landing page showcasing the application features.
- */
-
 import { Link } from 'react-router-dom';
 
 import { config } from '@/configs';
