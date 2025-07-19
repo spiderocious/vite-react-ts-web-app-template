@@ -1,0 +1,95 @@
+/* 
+ * BRAND COLORS: One-File Theme System
+ * 
+ * Change these CSS custom properties to instantly rebrand the entire application.
+ * This is the ONLY file you need to edit for complete visual transformation.
+ */
+
+:root {
+  /* === PRIMARY BRAND COLORS === */
+  --brand-primary-50: #eff6ff; /* Lightest brand tint */
+  --brand-primary-100: #dbeafe; /* Very light brand */
+  --brand-primary-200: #bfdbfe; /* Light brand */
+  --brand-primary-300: #93c5fd; /* Medium-light brand */
+  --brand-primary-400: #60a5fa; /* Medium brand */
+  --brand-primary-500: #3b82f6; /* Main brand color - HERO */
+  --brand-primary-600: #2563eb; /* Dark brand */
+  --brand-primary-700: #1d4ed8; /* Darker brand */
+  --brand-primary-800: #1e40af; /* Very dark brand */
+  --brand-primary-900: #1e3a8a; /* Darkest brand */
+
+  /* === SECONDARY BRAND COLORS === */
+  --brand-secondary-500: #8b5cf6; /* Accent color for highlights */
+  --brand-secondary-600: #7c3aed; /* Darker accent */
+
+  /* === SEMANTIC COLORS (customizable per brand) === */
+  --brand-success: #10b981; /* Success states */
+  --brand-warning: #f59e0b; /* Warning states */
+  --brand-error: #ef4444; /* Error states */
+  --brand-info: var(--brand-primary-500); /* Info uses primary */
+
+  /* === NEUTRAL PALETTE === */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+}
+
+/* === DARK MODE VARIANTS === */
+:root.dark {
+  /* Adjust brand colors for dark mode if needed */
+  --brand-primary-50: #1e3a8a;
+  --brand-primary-100: #1d4ed8;
+  --brand-primary-900: #eff6ff;
+
+  /* Dark mode semantic colors */
+  --brand-success: #34d399;
+  --brand-warning: #fbbf24;
+  --brand-error: #f87171;
+}
+
+/* 
+ * INSTANT REBRANDING EXAMPLES - Just uncomment one:
+ */
+
+/*
+🚀 TECH STARTUP (Default Blue):
+--brand-primary-500: #3b82f6;
+--brand-secondary-500: #8b5cf6;
+*/
+
+/*
+🏥 HEALTHCARE (Teal):
+--brand-primary-500: #14b8a6;
+--brand-secondary-500: #06b6d4;
+*/
+
+/*
+🎨 CREATIVE AGENCY (Purple):
+--brand-primary-500: #8b5cf6;
+--brand-secondary-500: #ec4899;
+*/
+
+/*
+🏢 FINANCE (Indigo):
+--brand-primary-500: #6366f1;
+--brand-secondary-500: #8b5cf6;
+*/
+
+/*
+🌱 ENVIRONMENTAL (Green):
+--brand-primary-500: #059669;
+--brand-secondary-500: #84cc16;
+*/
+
+/*
+🔥 GAMING (Red):
+--brand-primary-500: #dc2626;
+--brand-secondary-500: #ea580c;
+*/

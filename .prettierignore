@@ -1,0 +1,31 @@
+# Prettier ignore file
+node_modules
+dist
+build
+.next
+.nuxt
+.vite
+.vercel
+.netlify
+coverage
+*.min.js
+*.min.css
+*.bundle.js
+*.chunk.js
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Generated files
+*.generated.*
+*.auto.*
+
+# Logs
+*.log
+
+# Environment files
+.env*
+
+# IDE files
+.vscode/settings.json
+.idea/

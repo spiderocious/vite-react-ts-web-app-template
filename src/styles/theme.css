@@ -1,0 +1,310 @@
+/**
+ * CSS Custom Properties for Theming
+ * 
+ * CSS variables that can be dynamically updated for theme switching.
+ */
+
+:root {
+  /* ================================ */
+  /* Color Tokens */
+  /* ================================ */
+
+  /* Primary Colors */
+  --color-primary-50: 239 246 255;
+  --color-primary-100: 219 234 254;
+  --color-primary-200: 191 219 254;
+  --color-primary-300: 147 197 253;
+  --color-primary-400: 96 165 250;
+  --color-primary-500: 59 130 246;
+  --color-primary-600: 37 99 235;
+  --color-primary-700: 29 78 216;
+  --color-primary-800: 30 64 175;
+  --color-primary-900: 30 58 138;
+  --color-primary-950: 23 37 84;
+
+  /* Success Colors */
+  --color-success-50: 240 253 244;
+  --color-success-100: 220 252 231;
+  --color-success-200: 187 247 208;
+  --color-success-300: 134 239 172;
+  --color-success-400: 74 222 128;
+  --color-success-500: 34 197 94;
+  --color-success-600: 22 163 74;
+  --color-success-700: 21 128 61;
+  --color-success-800: 22 101 52;
+  --color-success-900: 20 83 45;
+  --color-success-950: 5 46 22;
+
+  /* Warning Colors */
+  --color-warning-50: 255 251 235;
+  --color-warning-100: 254 243 199;
+  --color-warning-200: 253 230 138;
+  --color-warning-300: 252 211 77;
+  --color-warning-400: 251 191 36;
+  --color-warning-500: 245 158 11;
+  --color-warning-600: 217 119 6;
+  --color-warning-700: 180 83 9;
+  --color-warning-800: 146 64 14;
+  --color-warning-900: 120 53 15;
+  --color-warning-950: 69 26 3;
+
+  /* Error Colors */
+  --color-error-50: 254 242 242;
+  --color-error-100: 254 226 226;
+  --color-error-200: 254 202 202;
+  --color-error-300: 252 165 165;
+  --color-error-400: 248 113 113;
+  --color-error-500: 239 68 68;
+  --color-error-600: 220 38 38;
+  --color-error-700: 185 28 28;
+  --color-error-800: 153 27 27;
+  --color-error-900: 127 29 29;
+  --color-error-950: 69 10 10;
+
+  /* Info Colors */
+  --color-info-50: 240 249 255;
+  --color-info-100: 224 242 254;
+  --color-info-200: 186 230 253;
+  --color-info-300: 125 211 252;
+  --color-info-400: 56 189 248;
+  --color-info-500: 14 165 233;
+  --color-info-600: 2 132 199;
+  --color-info-700: 3 105 161;
+  --color-info-800: 7 89 133;
+  --color-info-900: 12 74 110;
+  --color-info-950: 8 47 73;
+
+  /* Neutral Colors */
+  --color-neutral-0: 255 255 255;
+  --color-neutral-50: 248 250 252;
+  --color-neutral-100: 241 245 249;
+  --color-neutral-200: 226 232 240;
+  --color-neutral-300: 203 213 225;
+  --color-neutral-400: 148 163 184;
+  --color-neutral-500: 100 116 139;
+  --color-neutral-600: 71 85 105;
+  --color-neutral-700: 51 65 85;
+  --color-neutral-800: 30 41 59;
+  --color-neutral-900: 15 23 42;
+  --color-neutral-950: 2 6 23;
+
+  /* ================================ */
+  /* Theme-specific Colors */
+  /* ================================ */
+
+  /* Light Theme Colors */
+  --color-background: var(--color-neutral-0);
+  --color-surface: var(--color-neutral-50);
+  --color-surface-hover: var(--color-neutral-100);
+  --color-border: var(--color-neutral-200);
+  --color-border-hover: var(--color-neutral-300);
+
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-600);
+  --color-text-tertiary: var(--color-neutral-400);
+  --color-text-inverse: var(--color-neutral-0);
+
+  /* Interactive Colors */
+  --color-primary: var(--color-primary-500);
+  --color-primary-hover: var(--color-primary-600);
+  --color-primary-focus: var(--color-primary-700);
+  --color-primary-text: var(--color-neutral-0);
+
+  --color-secondary: var(--color-neutral-100);
+  --color-secondary-hover: var(--color-neutral-200);
+  --color-secondary-focus: var(--color-neutral-300);
+  --color-secondary-text: var(--color-neutral-900);
+
+  /* State Colors */
+  --color-success: var(--color-success-500);
+  --color-success-bg: var(--color-success-50);
+  --color-success-border: var(--color-success-200);
+  --color-success-text: var(--color-success-700);
+
+  --color-warning: var(--color-warning-500);
+  --color-warning-bg: var(--color-warning-50);
+  --color-warning-border: var(--color-warning-200);
+  --color-warning-text: var(--color-warning-700);
+
+  --color-error: var(--color-error-500);
+  --color-error-bg: var(--color-error-50);
+  --color-error-border: var(--color-error-200);
+  --color-error-text: var(--color-error-700);
+
+  --color-info: var(--color-info-500);
+  --color-info-bg: var(--color-info-50);
+  --color-info-border: var(--color-info-200);
+  --color-info-text: var(--color-info-700);
+
+  /* ================================ */
+  /* Typography */
+  /* ================================ */
+
+  --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-mono: 'Fira Code', Menlo, Monaco, 'Courier New', monospace;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* ================================ */
+  /* Spacing */
+  /* ================================ */
+
+  --spacing-px: 1px;
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+
+  /* ================================ */
+  /* Border & Shadow */
+  /* ================================ */
+
+  --border-radius-sm: 0.125rem;
+  --border-radius-md: 0.375rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-xl: 0.75rem;
+  --border-radius-2xl: 1rem;
+  --border-radius-full: 9999px;
+
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 4px;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* ================================ */
+  /* Animation & Transitions */
+  /* ================================ */
+
+  --transition-fast: 150ms ease-in-out;
+  --transition-medium: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ================================ */
+  /* Z-Index */
+  /* ================================ */
+
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1040;
+  --z-popover: 1050;
+  --z-tooltip: 1060;
+  --z-toast: 1070;
+}
+
+/* ================================ */
+/* Dark Theme */
+/* ================================ */
+
+[data-theme='dark'] {
+  /* Override theme-specific colors for dark mode */
+  --color-background: var(--color-neutral-900);
+  --color-surface: var(--color-neutral-800);
+  --color-surface-hover: var(--color-neutral-700);
+  --color-border: var(--color-neutral-700);
+  --color-border-hover: var(--color-neutral-600);
+
+  --color-text-primary: var(--color-neutral-100);
+  --color-text-secondary: var(--color-neutral-400);
+  --color-text-tertiary: var(--color-neutral-500);
+  --color-text-inverse: var(--color-neutral-900);
+
+  /* Adjust interactive colors for dark mode */
+  --color-secondary: var(--color-neutral-700);
+  --color-secondary-hover: var(--color-neutral-600);
+  --color-secondary-focus: var(--color-neutral-500);
+  --color-secondary-text: var(--color-neutral-100);
+
+  /* Adjust state backgrounds for dark mode */
+  --color-success-bg: var(--color-success-950);
+  --color-success-border: var(--color-success-800);
+  --color-success-text: var(--color-success-300);
+
+  --color-warning-bg: var(--color-warning-950);
+  --color-warning-border: var(--color-warning-800);
+  --color-warning-text: var(--color-warning-300);
+
+  --color-error-bg: var(--color-error-950);
+  --color-error-border: var(--color-error-800);
+  --color-error-text: var(--color-error-300);
+
+  --color-info-bg: var(--color-info-950);
+  --color-info-border: var(--color-info-800);
+  --color-info-text: var(--color-info-300);
+
+  /* Adjust shadows for dark mode */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+}
+
+/* ================================ */
+/* Reduced Motion Support */
+/* ================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-medium: 0ms;
+    --transition-slow: 0ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ================================ */
+/* High Contrast Support */
+/* ================================ */
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-border: var(--color-neutral-900);
+    --color-text-secondary: var(--color-neutral-900);
+  }
+
+  [data-theme='dark'] {
+    --color-border: var(--color-neutral-100);
+    --color-text-secondary: var(--color-neutral-100);
+  }
+}

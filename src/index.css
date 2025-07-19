@@ -1,0 +1,62 @@
+/* Import theme system first */
+@import './styles/theme.css';
+
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-sans antialiased;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+
+  /* Selection styles */
+  ::selection {
+    @apply bg-primary/20 text-text-primary;
+  }
+
+  /* Remove default margins and padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* Component layer for reusable component styles */
+@layer components {
+  /* Button base styles */
+  .btn {
+    @apply inline-flex items-center justify-center font-medium rounded-md transition-all duration-fast;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Form input base styles */
+  .form-input {
+    @apply block w-full rounded-md border border-border;
+    @apply bg-surface px-3 py-2;
+    @apply text-text-primary placeholder-text-tertiary;
+    @apply focus:border-primary focus:ring-primary;
+    @apply transition-colors duration-fast;
+  }
+
+  /* Card component base */
+  .card {
+    @apply bg-surface rounded-lg shadow-md border border-border;
+  }
+}
